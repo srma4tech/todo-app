@@ -6,22 +6,54 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        Hello World!
+        <FirstComponent />
+        <SecondComponent />
+        <ThirdComponent />
+        <FourthComponent />
       </div>
     );
   }
 }
+
+//Class Component
+class FirstComponent extends Component {
+  render() {
+    return (
+      <div className="firstComponent">
+        FirstComponent
+      </div>
+    );
+  }
+}
+
+// Class Component
+class SecondComponent extends Component {
+  render() {
+    return(
+      <div className="secondComponent">
+        SecondComponent
+      </div>
+    );
+  }
+}
+
+//Functional Component
+function ThirdComponent() {
+    return(
+      <div className="thirdComponent">
+        ThirdComponent
+      </div>
+    );
+}
+
+//Finctonal Component 
+function FourthComponent () {
+  return(
+    <div className="thirdComponent">
+        FourthComponent
+      </div>
+  );
+}
+
 export default App;
